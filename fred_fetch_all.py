@@ -1,69 +1,3 @@
-import json
-import requests
-import time
-from collections import defaultdict
-import os
-from operator import itemgetter 
-
-# --- Configuration ---
-
-# Input file path provided by the user
-INPUT_FILE = '/workspaces/US-County_analyses/subs/fred_fips_map.json'
-# Output directory to save the state-level JSON files
-OUTPUT_DIR = 'fred_county_series_output'
-
-# FRED API endpoint for a category's series (replace with your actual FRED API key)
-# NOTE: You MUST replace 'YOUR_FRED_API_KEY' with your actual key for the script to work.
-FRED_API_KEY = '4e4f431f570df2e81fd7935bd7f48034'
-FRED_SERIES_ENDPOINT = "https://api.stlouisfed.org/fred/category/series"
-
-# Delay parameters (as requested)
-COUNTY_QUERY_DELAY = 0.5  # seconds (delay between county-level queries)
-STATE_COMPLETION_DELAY = 1.0  # seconds (delay between finishing a state and starting the next)
-
-# --- Utility Functions ---
-
-def fetch_fred_series(category_id: int) -> list:
-    """
-    Fetches the list of available FRED series for a given category ID.
-    
-    Args:
-        category_id: The County_Category_ID from the input file.
-        
-    Returns:
-        A list of series records (dictionaries), or an empty list on failure.
-    """
-    if not category_id:
-        return []
-        
-    # Convert category ID (which might be a float) to a string for the API call
-    category_id_str = str(int(category_id))
-    
-    params = {
-        'api_key': FRED_API_KEY,
-        'category_id': category_id_str,
-        'file_type': 'json'
-    }
-
-    try:
-        response = requests.get(FRED_SERIES_ENDPOINT, params=params)
-        response.raise_for_status() # Raise exception for bad status codes
-        data = response.json()
-        
-        if 'seriess' in data:
-            return data['seriess']
-        else:
-            print(f"Warning: No 'seriess' found for category {category_id_str}.")
-            return []
-
-    except requests.exceptions.RequestException as err:
-        print(f"Error fetching series for category {category_id_str}: {err}")
-    except json.JSONDecodeError:
-        print(f"Error decoding JSON response for category {category_id_str}.")
-        
-    return []
-
-
 def process_fred_map_file():
     """
     Main function to read, sort, fetch FRED series, and composite 
@@ -127,22 +61,34 @@ def process_fred_map_file():
             for series in series_list:
                 full_series_title = series.get('title', 'Unknown Series Title')
                 
-                # --- LOGIC TO EXTRACT NORMALIZED SERIES TITLE ---
+                # --- REVISED LOGIC TO EXTRACT NORMALIZED SERIES TITLE ---
                 normalized_title = full_series_title
-                if ' in ' in full_series_title:
-                    # Find the index of the ' in ' separator
-                    location_start_index = full_series_title.rfind(' in ')
+                
+                # Find the last occurrence of common locational prefixes
+                location_start_index_in = full_series_title.rfind(' in ')
+                location_start_index_for = full_series_title.rfind(' for ')
+                
+                # Determine which prefix (if any) is the latest in the string
+                # Note: ' in ' is 4 chars, ' for ' is 5 chars. We want the index where the stripping should start.
+                if location_start_index_in > location_start_index_for:
+                    location_start_index = location_start_index_in
+                    separator_length = 4 # length of ' in '
+                elif location_start_index_for > -1: # Only use ' for ' if it was found
+                    location_start_index = location_start_index_for
+                    separator_length = 5 # length of ' for '
+                else:
+                    location_start_index = -1 # Neither found, use full title
                     
-                    # Look back from ' in ' to find the preceding comma
-                    # This ensures we stop before the county name/location starts
+                if location_start_index != -1:
+                    # Look back from the detected separator index to find the preceding comma
                     comma_index = full_series_title.rfind(',', 0, location_start_index)
                     
                     if comma_index != -1:
                         # Use the part before the last comma found
                         normalized_title = full_series_title[:comma_index].strip()
                     else:
-                        # Fallback: if no comma is found, just use the part before ' in '
-                        normalized_title = full_series_title.split(' in ')[0].strip()
+                        # Fallback: if no comma is found, use the part before the separator (e.g., ' for ' or ' in ')
+                        normalized_title = full_series_title[:location_start_index].strip()
 
                 series_title_key = normalized_title
                 # -----------------------------------------------------------
@@ -177,7 +123,3 @@ def process_fred_map_file():
             time.sleep(STATE_COMPLETION_DELAY)
 
     print("\nProcessing complete! 🎉")
-
-# --- Execution ---
-if __name__ == "__main__":
-    process_fred_map_file()
