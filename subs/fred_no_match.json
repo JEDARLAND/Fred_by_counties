@@ -1,0 +1,240 @@
+[
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Albemarle County + Charlottesville City, VA",
+        "County_Category_ID":33806.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33806"
+    },
+    {
+        "Parent_State":"Alaska",
+        "County_Name":"Aleutian Islands Census Area",
+        "County_Category_ID":33743.0,
+        "Series_Count":2.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33743"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Alleghany County + Covington City, VA",
+        "County_Category_ID":33807.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33807"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Augusta, Staunton + Waynesboro County, VA",
+        "County_Category_ID":33923.0,
+        "Series_Count":8.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33923"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Campbell County + Lynchburg City, VA",
+        "County_Category_ID":33808.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33808"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Carroll County + Galax City, VA",
+        "County_Category_ID":33809.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33809"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Clifton Forge City, VA",
+        "County_Category_ID":30228.0,
+        "Series_Count":1.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/30228"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Dinwiddie, Colonial Heights + Petersburg County, VA",
+        "County_Category_ID":33925.0,
+        "Series_Count":8.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33925"
+    },
+    {
+        "Parent_State":"District of Columbia",
+        "County_Name":"District of Columbia",
+        "County_Category_ID":33508.0,
+        "Series_Count":151.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33508"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Fairfax, Fairfax City + Falls Church County, VA",
+        "County_Category_ID":33927.0,
+        "Series_Count":8.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33927"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Frederick County + Winchester City, VA",
+        "County_Category_ID":33810.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33810"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Greensville County + Emporia City, VA",
+        "County_Category_ID":33811.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33811"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Henry County + Martinsville City, VA",
+        "County_Category_ID":33812.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33812"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"James City County + Williamsburg City, VA",
+        "County_Category_ID":33813.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33813"
+    },
+    {
+        "Parent_State":"Alaska",
+        "County_Name":"Kusilvak Census Area, AK",
+        "County_Category_ID":33897.0,
+        "Series_Count":94.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33897"
+    },
+    {
+        "Parent_State":"Hawaii",
+        "County_Name":"Maui + Kalawao Counties, HI",
+        "County_Category_ID":33804.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33804"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Montgomery County + Radford City, VA",
+        "County_Category_ID":33814.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33814"
+    },
+    {
+        "Parent_State":"South Dakota",
+        "County_Name":"Oglala Lakota County, SD",
+        "County_Category_ID":33805.0,
+        "Series_Count":89.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33805"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Pittsylvania County + Danville City, VA",
+        "County_Category_ID":33815.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33815"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Prince George County + Hopewell City, VA",
+        "County_Category_ID":33816.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33816"
+    },
+    {
+        "Parent_State":"Alaska",
+        "County_Name":"Prince of Wales-Outer Ketchikan Census Area, AK",
+        "County_Category_ID":27421.0,
+        "Series_Count":28.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org \/categories\/27421"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Prince William, Manassas + Manassas Park County, VA",
+        "County_Category_ID":33929.0,
+        "Series_Count":8.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33929"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Roanoke County + Salem City, VA",
+        "County_Category_ID":33817.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33817"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Rockbridge, Buena Vista + Lexington County, VA",
+        "County_Category_ID":33931.0,
+        "Series_Count":8.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33931"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Rockingham County + Harrisonburg City, VA",
+        "County_Category_ID":33818.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33818"
+    },
+    {
+        "Parent_State":"Wisconsin",
+        "County_Name":"Shawano County, WI (includes Menominee)",
+        "County_Category_ID":33741.0,
+        "Series_Count":2.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33741"
+    },
+    {
+        "Parent_State":"Alaska",
+        "County_Name":"Skagway-Hoonah-Angoon Census Area, AK",
+        "County_Category_ID":27423.0,
+        "Series_Count":49.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org \/categories\/27423"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Southampton County + Franklin City, VA",
+        "County_Category_ID":33819.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33819"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"South Boston City, VA",
+        "County_Category_ID":32143.0,
+        "Series_Count":1.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/32143"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Spotsylvania County + Fredericksburg City, VA",
+        "County_Category_ID":33820.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33820"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Washington County + Bristol City, VA",
+        "County_Category_ID":33821.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33821"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"Wise County + Norton City, VA",
+        "County_Category_ID":33822.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33822"
+    },
+    {
+        "Parent_State":"Alaska",
+        "County_Name":"Wrangell-Petersburg Census Area, AK",
+        "County_Category_ID":27427.0,
+        "Series_Count":28.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org \/categories\/27427"
+    },
+    {
+        "Parent_State":"Virginia",
+        "County_Name":"York County + Poquoson City, VA",
+        "County_Category_ID":33823.0,
+        "Series_Count":10.0,
+        "FRED_URL":"https:\/\/fred.stlouisfed.org\/categories\/33823"
+    }
+]

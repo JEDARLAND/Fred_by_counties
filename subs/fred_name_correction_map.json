@@ -1,0 +1,13 @@
+name_correction_json = """
+{
+    "Anchorage Municipality": "Anchorage",
+    "Broomfield County": "Broomfield",
+    "Honolulu County": "Honolulu",
+    "Juneau City and Borough": "Juneau",
+    "Philadelphia County": "Philadelphia",
+    "San Francisco County": "San Francisco",
+    "Sitka City and Borough": "Sitka",
+    "Wrangell City and Borough": "Wrangell",
+    "Yakutat City and Borough": "Yakutat"
+}
+"""
